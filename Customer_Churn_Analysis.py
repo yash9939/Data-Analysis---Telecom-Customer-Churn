@@ -188,8 +188,8 @@ plt.show() # Dispalying the graph
 partner_dependents_counts = data.groupby(["Partner", "Dependents"]).size().reset_index(name="Count") # Getting and counting the data of customers having partners and dependents
 plt.figure(figsize=(8, 8)) # Setting the figure
 plt.title("Proportion of Customers by Partner and Dependents", pad=20)  # Giving the title for the graph
-plt.pie(partner_dependents_counts["Count"], labels=partner_dependents_counts.apply(lambda x: f"Partner: {x["Partner"]}, Dependents: {x["Dependents"]}", axis=1), 
-        autopct='%1.1f%%', startangle=140, colors=["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3"]) # Plotting the graph
+plt.pie(partner_dependents_counts["Count"], labels=partner_dependents_counts.apply(lambda x: f'Partner: {x["Partner"]}, Dependents: {x["Dependents"]}', axis=1), 
+        autopct="%1.1f%%", startangle=140, colors=["#66c2a5", "#fc8d62", "#8da0cb", "#e78ac3"]) # Plotting the graph
 plt.axis("equal") # Ensuring the graph is in proper shape and size
 plt.grid(True) # Providing the gridding for the graph
 plt.show() # Dispalying the graph
