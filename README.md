@@ -4,6 +4,9 @@ Introduction of Customer_Churn :-
 
 Customer churn refers to the phenomenon where customers end their relationship with a company or service provider, typically by canceling their subscriptions or contracts and moving to a competitor or discontinuing the service altogether.
 
-In this analysis, I am working with the "Telecom-Customer-Churn.csv" dataset, which contains information related to customer churn in a telecom company. The dataset includes various attributes such as customer demographics, services subscribed, contract details, and churn status. We aim to explore factors influencing customer churn and visualize patterns using Python's Pandas for data manipulation and Seaborn/Matplotlib for data visualization.
+Summary :-
 
-In my analysis of telecom customer churn using the "Telecom-Customer-Churn.csv" dataset, I've streamlined my data by removing unnecessary columns. This process ensures we focus only on the most relevant factors influencing customer retention and satisfaction.
+This project leverages Python's pandas, matplotlib, seaborn, and numpy libraries to analyze telecom customer churn. The dataset, sourced from a telecom company, was initially cleaned by removing unnecessary columns and handling missing values. Exploratory Data Analysis (EDA) revealed insights into customer churn patterns across various demographics and services. Visualizations such as pie charts and bar plots compared churn rates by gender and senior citizen status, while analyses by contract type and payment method highlighted significant factors influencing churn. Statistical summaries like correlation matrices provided deeper insights into relationships between numerical features. The project culminated in visualizations like histograms and box plots to compare monthly charges and other metrics between churned and non-churned customers. These findings aim to inform strategies for enhancing customer retention and reducing churn in telecom services.
+
+
+                                             ! THANK YOU FOR CHECKING IN !
