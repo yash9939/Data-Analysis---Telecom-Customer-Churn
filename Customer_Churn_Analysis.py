@@ -75,6 +75,26 @@ plt.legend(loc="upper left") # Displaying the meaning of the colored bars and po
 plt.grid(True) # Providing the gridding for the graph
 plt.show() # Dispalying the graph
 
+# Grouped bar chart to count Customers by Internet Service and Gender
+plt.figure(figsize=(12, 8)) # Setting the figure size
+plt.title('Count of Customers by Internet Service and Gender') # Giving the title for the graph
+sns.countplot(x='InternetService', hue='gender', data=data) # Plotting the graph
+plt.xlabel('Internet Service') # Providing the the name for x-axis
+plt.ylabel('Number of Customers') # Providing the the name for y-axis
+plt.legend(title='Gender', loc='upper left') # Displaying the title, meaning of the colored bars and positon of it to dispaly.
+plt.grid(True) # Providing the gridding for the graph
+plt.show() # Dispalying the graph
+
+# Plotting distribution of tenure for churned vs non-churned customers
+plt.figure(figsize=(10, 6)) # Setting the figure size
+plt.title('Distribution of Tenure for Churned vs Non-Churned Customers') # Giving the title for the graph
+sns.histplot(data=data, x='tenure', hue='Churn', kde=True) # Plotting the graph
+plt.xlabel('Tenure (months)') # Providing the the name for x-axis
+plt.ylabel('Count') # Providing the the name for y-axis
+plt.legend(title='Churn', loc='upper right', labels=['No', 'Yes']) # Displaying the title, meaning of the colored bars and positon of it to dispaly
+plt.grid(True) # Providing the gridding for the graph
+plt.show() # Dispalying the graph
+
 # Plotting churn rates by PaymentMethod
 plt.figure(figsize=(10, 6)) # Setting the figure size
 plt.title("Churn Rates by Payment Method") # Giving the title for the graph
